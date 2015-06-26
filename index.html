@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Milk the cows</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+        <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+        </style>
+    <![endif]-->
+    </head>
+    <body>
+        <audio id="cow-sound" src="audio/Single Cow-SoundBible.com-2051754137.mp3"></audio>
+        <audio id="cows-sound" src="audio/Small Herd Cattle-SoundBible.com-101186334.mp3"></audio>
+        <audio id="cash-sound" src="audio/Cash Register Cha Ching-SoundBible.com-184076484.mp3"></audio>
+        <audio id="error-sound" src="audio/Computer Error Alert-SoundBible.com-783113881.mp3"></audio>
+
+        <div id="main">
+            <div class="banner-section">
+                <div class="money">$<span id="money-total">0.00</span></div>
+                <div class="seconds">Money per second: <span id="per-second">0.00</span></div>
+                <button id="milk" class="milk-the-cows gradient" type="button" onclick="milking(); cowsSound();">Milk the cow<span id="plural1"></span></button>
+                <div id="cows-section">
+                    <div class="cow"><img src="img/cow.png" alt="cow image" /></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="col-4">
+                    <button id="add-cow" class="add gradient disabled" type="button" onclick="addCow(); cashSound();">Buy a cow: $<span id="cost">200</span></button>
+                    <p class="count">You have <span id="cow-count">1</span> cow<span id="plural2"></span>!</p>
+                    <p class="milking-total">Milking the cow<span id="plural3"></span> will earn you $<span id="milikng-amount">100</span> per click.</p>
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id augue eget elit iaculis ultricies. Ut consectetur, magna et vulputate placerat, sem neque placerat eros, nec pharetra ligula nisl elementum justo. Duis eu arcu eu neque vehicula varius vitae eu justo. Maecenas iaculis vitae nunc vel iaculis. Sed condimentum et est at rhoncus. Maecenas ac varius eros, congue convallis diam. Morbi ex massa, ultricies nec urna blandit, aliquet viverra nibh. Vestibulum hendrerit sem purus, sit amet blandit orci efficitur a. Aliquam pharetra scelerisque augue sit amet interdum. Aenean eu efficitur metus. Maecenas et dapibus mauris.</p>
+
+                    <p>Aliquam posuere eros sem, in suscipit nibh varius volutpat. Curabitur a euismod dolor, in condimentum diam. Fusce odio ligula, finibus in lorem eget, mollis varius sem. Mauris ultrices vitae lorem ut posuere. Ut hendrerit vel nisi sed tristique. Praesent sed dictum leo. Nunc ligula sapien, mollis ut metus in, bibendum imperdiet ante. Maecenas porta erat quis ante sollicitudin lobortis. </p>
+                </div>
+                <div class="col-4">
+                    <p>In ac imperdiet lorem, fringilla feugiat elit. Duis massa urna, condimentum vitae tellus non, vulputate tincidunt massa. Ut efficitur commodo commodo. Cras congue mauris odio, vel facilisis odio tristique eu. Vivamus eu nunc venenatis, suscipit massa vel, molestie magna. Donec pellentesque odio nunc, facilisis cursus velit hendrerit in. Sed id euismod enim, at pretium magna. Aliquam vitae augue libero. Praesent vestibulum eleifend odio, sit amet suscipit odio dictum at. Nam et elit sit amet augue ullamcorper pretium et pellentesque erat. Sed vel tellus rhoncus, commodo lectus scelerisque, pellentesque velit. Praesent nec leo egestas, volutpat justo maximus, pharetra nisl. Proin ultrices consequat lorem. Donec congue eu sem in feugiat. Phasellus at ex non massa tristique fermentum sed quis tortor.</p>
+
+                    <p>Sed mattis metus ut dolor aliquet, id consectetur arcu interdum. Nulla scelerisque accumsan ipsum, ac maximus lorem gravida et. Quisque tristique dolor vitae auctor cursus. Suspendisse sagittis nisi turpis, nec egestas ex feugiat in. Nulla lacus libero, faucibus a nunc at, tristique rhoncus eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer eget pulvinar tellus. Integer tempor finibus magna eu hendrerit. Nullam at sollicitudin arcu, a volutpat nibh. Phasellus at fermentum justo, ac blandit est. Mauris semper id diam sed interdum. Sed blandit leo mattis, dignissim dui vitae, sollicitudin leo. Nulla semper fringilla dui quis elementum. Nulla tristique massa dui, vitae ornare orci convallis eget.</p>
+                </div>
+            </div>
+        </div>
+     
+        <footer>
+        </footer>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
