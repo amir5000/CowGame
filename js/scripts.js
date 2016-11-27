@@ -31,7 +31,7 @@ function addCow () {
 		cow.innerHTML = '<img src="img/cow.png" alt="cow image" />';
 		document.getElementById('cows-section').appendChild(cow);
 	} else {
-		alert("You don't have enough money to buy a cow, milk more cows!");
+		alert("You don't have enough money to buy a cow, milk more cows to earn more cash!");
 	}
 	var top_level_div = document.getElementById('cows-section');
 	var count = top_level_div.getElementsByTagName('div').length;
